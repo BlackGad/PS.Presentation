@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Windows.Markup;
 using PS.Presentation.Properties;
 
 // General Information about an assembly is controlled through the following 
@@ -37,3 +38,7 @@ using PS.Presentation.Properties;
 
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+[assembly: XmlnsDefinition("http://schemas.ps.com/2018/xaml", "PS.Presentation.DataTemplate")]
+[assembly: XmlnsDefinition("http://schemas.ps.com/2018/xaml", "PS.Presentation.Resources")]
+[assembly: XmlnsPrefix("http://schemas.ps.com/2018/xaml", "ps")]

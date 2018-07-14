@@ -36,7 +36,7 @@
   <ItemGroup>
     <Reference Include="PS.Build.Nuget, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PS.Build.Nuget.1.11.0\lib\net461\PS.Build.Nuget.dll</HintPath>
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,6 +63,7 @@
     <ProjectReference Include="..\PS.Presentation\PS.Presentation.csproj">
       <Project>{c5268a54-8e6f-4765-aa59-a201710339a6}</Project>
       <Name>PS.Presentation</Name>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

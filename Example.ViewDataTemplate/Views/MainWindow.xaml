@@ -1,0 +1,57 @@
+﻿<Window x:Class="Example.ViewDataTemplate.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:model="clr-namespace:Example.ViewDataTemplate.Model"
+        xmlns:ps="http://schemas.ps.com/2018/xaml"
+        xmlns:views="clr-namespace:Example.ViewDataTemplate.Views"
+        Title="MainWindow"
+        Width="525"
+        Height="350"
+        d:DataContext="{d:DesignInstance views:MainWindowViewModel}"
+        mc:Ignorable="d">
+    <Window.Resources>
+        
+        <ps:ViewDataTemplate x:Key="ViewDataTemplate"
+                             DataType="{x:Type model:Item}"
+                             ViewType="views:ItemView" />
+        
+        <ps:ViewHierarchicalDataTemplate x:Key="HierarchicalDataTemplate"
+                                         DataType="{x:Type model:Item}"
+                                         ItemsSource="{Binding SubItems}"
+                                         ViewType="views:ItemView" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Margin="5"
+                   Text="List view with ViewDataTemplate" />
+
+        <TextBlock Grid.Row="0"
+                   Grid.Column="1"
+                   Margin="5"
+                   Text="Tree view with ViewHierarchicalDataTemplate" />
+
+        <ListView Grid.Row="1"
+                  Grid.Column="0"
+                  Margin="5"
+                  ItemTemplate="{StaticResource ViewDataTemplate}"
+                  ItemsSource="{Binding ItemsSource}" />
+
+        <TreeView Grid.Row="1"
+                  Grid.Column="1"
+                  Margin="5"
+                  ItemTemplate="{StaticResource HierarchicalDataTemplate}"
+                  ItemsSource="{Binding ItemsSource}" />
+    </Grid>
+</Window>

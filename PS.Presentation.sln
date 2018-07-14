@@ -7,22 +7,65 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS.Presentation", "PS.Prese
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS.Presentation.Package", "PS.Presentation.Package\PS.Presentation.Package.csproj", "{82FBCB0E-6A1B-4537-87DC-D17C573CE469}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{62F48874-678A-4AC6-B32A-445330860AFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{2712CB03-CFBA-45C6-A568-F0E45F7DC537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.ViewDataTemplate", "Example.ViewDataTemplate\Example.ViewDataTemplate.csproj", "{C228B2D7-F7D3-4468-BEDA-E41A2A084CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.PrismDataTemplate", "Example.PrismDataTemplate\Example.PrismDataTemplate.csproj", "{C228B2D7-F7D3-4468-BEDA-E41A2A084111}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.LazyControlDefinition", "Example.LazyControlDefinition\Example.LazyControlDefinition.csproj", "{8FB5F934-88F5-493F-8218-07762EDEA6D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Examples = Debug|Examples
 		Release|Any CPU = Release|Any CPU
+		Release|Examples = Release|Examples
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C5268A54-8E6F-4765-AA59-A201710339A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5268A54-8E6F-4765-AA59-A201710339A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5268A54-8E6F-4765-AA59-A201710339A6}.Debug|Examples.ActiveCfg = Debug|Any CPU
+		{C5268A54-8E6F-4765-AA59-A201710339A6}.Debug|Examples.Build.0 = Debug|Any CPU
 		{C5268A54-8E6F-4765-AA59-A201710339A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5268A54-8E6F-4765-AA59-A201710339A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5268A54-8E6F-4765-AA59-A201710339A6}.Release|Examples.ActiveCfg = Release|Any CPU
+		{C5268A54-8E6F-4765-AA59-A201710339A6}.Release|Examples.Build.0 = Release|Any CPU
 		{82FBCB0E-6A1B-4537-87DC-D17C573CE469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{82FBCB0E-6A1B-4537-87DC-D17C573CE469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82FBCB0E-6A1B-4537-87DC-D17C573CE469}.Debug|Examples.ActiveCfg = Debug|Any CPU
 		{82FBCB0E-6A1B-4537-87DC-D17C573CE469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82FBCB0E-6A1B-4537-87DC-D17C573CE469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82FBCB0E-6A1B-4537-87DC-D17C573CE469}.Release|Examples.ActiveCfg = Release|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084CB4}.Debug|Examples.ActiveCfg = Debug|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084CB4}.Debug|Examples.Build.0 = Debug|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084CB4}.Release|Examples.ActiveCfg = Release|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084CB4}.Release|Examples.Build.0 = Release|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084111}.Debug|Examples.ActiveCfg = Debug|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084111}.Debug|Examples.Build.0 = Debug|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084111}.Release|Examples.ActiveCfg = Release|Any CPU
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084111}.Release|Examples.Build.0 = Release|Any CPU
+		{8FB5F934-88F5-493F-8218-07762EDEA6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB5F934-88F5-493F-8218-07762EDEA6D9}.Debug|Examples.ActiveCfg = Debug|Any CPU
+		{8FB5F934-88F5-493F-8218-07762EDEA6D9}.Debug|Examples.Build.0 = Debug|Any CPU
+		{8FB5F934-88F5-493F-8218-07762EDEA6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FB5F934-88F5-493F-8218-07762EDEA6D9}.Release|Examples.ActiveCfg = Release|Any CPU
+		{8FB5F934-88F5-493F-8218-07762EDEA6D9}.Release|Examples.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5268A54-8E6F-4765-AA59-A201710339A6} = {62F48874-678A-4AC6-B32A-445330860AFC}
+		{82FBCB0E-6A1B-4537-87DC-D17C573CE469} = {62F48874-678A-4AC6-B32A-445330860AFC}
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084CB4} = {2712CB03-CFBA-45C6-A568-F0E45F7DC537}
+		{C228B2D7-F7D3-4468-BEDA-E41A2A084111} = {2712CB03-CFBA-45C6-A568-F0E45F7DC537}
+		{8FB5F934-88F5-493F-8218-07762EDEA6D9} = {2712CB03-CFBA-45C6-A568-F0E45F7DC537}
 	EndGlobalSection
 EndGlobal

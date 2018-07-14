@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:Example.LazyControlDefinition.Controls">
+
+    <ControlTemplate x:Key="{x:Static controls:LazyControl+Resource.ControlTemplate}" TargetType="controls:LazyControl">
+        <Grid Background="{TemplateBinding Background}" />
+    </ControlTemplate>
+
+    <Style x:Key="{x:Static controls:LazyControl+Resource.ControlStyle}" TargetType="controls:LazyControl">
+        <Setter Property="Template" Value="{StaticResource {x:Static controls:LazyControl+Resource.ControlTemplate}}" />
+        <Setter Property="Background" Value="RoyalBlue" />
+        <Setter Property="MinWidth" Value="100" />
+        <Setter Property="MinHeight" Value="100" />
+    </Style>
+
+</ResourceDictionary>
